@@ -27,9 +27,9 @@ const Sidebar = ({ docs }) => {
                 >
                   <span className="truncate">{rootNode.title}</span>
                 </Link>
-                {nonRoots[rootNode.id] && (
+                {nonRoots[rootNode.id.replace(/\.$/, "")] && (
                   <ul role="list" className="border-l border-transparent">
-                    {nonRoots[rootNode.id].map((subRoot) => (
+                    {nonRoots[rootNode.id.replace(/\.$/, "")].map((subRoot) => (
                       <li key={subRoot.id}>
                         <Link
                           className="flex justify-between gap-2 py-1 pl-7 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
