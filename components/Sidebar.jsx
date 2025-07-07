@@ -2,13 +2,13 @@ import Link from "next/link";
 
 const Sidebar = ({ docs }) => {
   const roots = docs.filter((doc) => !doc.parent);
-  console.log({ roots });
+ // console.log({ roots });
 
   const nonRoots = Object.groupBy(
     docs.filter((doc) => doc.parent),
     ({ parent }) => parent
   );
-  console.log({ nonRoots });
+  //console.log({ nonRoots });
 
   return (
     <nav className="lg:block my-10">
