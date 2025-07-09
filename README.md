@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📘 DocuCraft - API Documentation Template
 
-## Getting Started
+[Live Demo](https://docu-craft-nextjs-one.vercel.app/)
 
-First, run the development server:
+DocuCraft is a beautifully minimal and developer-friendly API documentation template built with **Next.js**, **Tailwind CSS**, and **Markdown** support via **gray-matter** and **remark**. It’s ideal for documenting APIs, SDKs, or developer onboarding materials with a clean and professional interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![DocuCraft Preview](./public/docucraft.png)
+![DocuCraft Preview](./public/docucraft1.png)
+![DocuCraft Preview](./public/docucraft2.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 📚 **Markdown-Based Content** – Write docs in simple `.md` files
+- 🧭 **Sidebar Navigation** – Auto-generated or configurable sections
+- 🪄 **Tailwind Typography** – Clean, readable formatting with prose classes
+- 💅 **Fully Responsive** – Mobile-first and adaptable UI
+- 🔎 **Search Bar UI** – Optional searchable header
+- 🎨 **Dark UI Style** – Developer-focused aesthetic
+- ⚡ **Fast and Optimized** – Powered by Next.js 14 with modern tooling
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Technology            | Description                            |
+|------------------------|----------------------------------------|
+| **Next.js 14**         | React framework with file-based routing |
+| **React 18**           | Core UI library                        |
+| **Tailwind CSS**       | Utility-first CSS framework            |
+| **gray-matter**        | Markdown frontmatter parsing           |
+| **remark + remark-html** | Markdown to HTML transformation      |
+| **@tailwindcss/typography** | Beautiful prose formatting        |
+| **@tailwindcss/aspect-ratio** | Aspect ratio utilities          |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
