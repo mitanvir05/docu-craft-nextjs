@@ -1,5 +1,14 @@
-const CategoriesPage = ({ params: { name } }) => {
-  return <div>{name}</div>;
-};
+import ContentDisplay from "@/components/ContentDisplay";
+import { getDocumentsByCategory } from "@/components/utils/doc-util";
+import { getDocuments } from "@/lib/doc";
 
-export default CategoriesPage;
+
+const CategoriesPage = ({params: {name}}) => {
+    const docs = getDocuments();
+    const matchedDocs = getDocumentsByCategory(docs, name);
+    return (
+        <ContentDisplay id={matchedDocs[0].id} />
+    )
+  }
+
+  export default CategoriesPage
